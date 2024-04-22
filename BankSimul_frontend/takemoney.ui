@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TakeMoney</class>
+ <widget class="QDialog" name="TakeMoney">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QPushButton" name="AcceptWithdrawButton">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>400</y>
+     <width>110</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>110</horstretch>
+     <verstretch>35</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>110</width>
+     <height>35</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Hyväksy nosto</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="CancelWithdrawButton">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>400</y>
+     <width>110</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>110</horstretch>
+     <verstretch>35</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>110</width>
+     <height>35</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Peruuta nosto</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="MoneyInput">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>340</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>Syötä rahasumma</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>CancelWithdrawButton</sender>
+   <signal>clicked()</signal>
+   <receiver>TakeMoney</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>199</x>
+     <y>417</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>249</x>
+     <y>224</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
